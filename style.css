@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: relative;
+    background-image: url("back.jpg");
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(21, 161, 204);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(14, 7, 7);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    padding: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h2 {
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    color: rgb(250, 248, 248);
+    font-size: llpx;
+    line-height: 15px;
+}
+
+.card {
+    width: 200px;
+    height: 210px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card-one {
+    background-image: url("background.jpg");
+}
+
+.card-two {
+    background-image: url("two.jpg");
+}
+
+.card-three {
+    background-image: url("three.jpg");
+}
+
+.card-four {
+    background-image: url("four.jpg");
+}
+
+.card-five {
+    background-image: url("five.jpg");
+}
+
+.card-six {
+    background-image: url("six.jpg");
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 05px #999;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+button {
+    position: relative;
+    background-color: #55a0e6;
+    border: none;
+    font-size: 19px;
+    color: #FFFFFF;
+    padding: 12px 0;
+    width: 180px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
